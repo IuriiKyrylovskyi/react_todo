@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+Link: https://iuriikyrylovskyi.github.io/react_todo/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
