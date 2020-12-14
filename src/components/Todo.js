@@ -21,12 +21,12 @@ function Todo({todos, completeTodo, removeTodo, updateTodo}) {
 		return <TodoForm edit={edit} onSubmit={submitUpdate} />;
 	}
 
-	return todos.map((todo, index) => {
+	return todos.map((todo, index) => (
 		<div
 			className={todo.isComplete ? 'todo-row complete' : 'todo-row'}
 			key={index}
 		>
-			<div key={todo.id} onClick={() => completeTodo(todo.id)}>
+			<div className='text' key={todo.id} onClick={() => completeTodo(todo.id)}>
 				{todo.text}
 			</div>
 			<div className='icons'>
@@ -40,7 +40,7 @@ function Todo({todos, completeTodo, removeTodo, updateTodo}) {
 				/>
 			</div>
 		</div>
-	});
+	));
 };
 
 export default Todo;
